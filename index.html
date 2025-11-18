@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop NYC | Your Trusted Pet Store in New York</title>
+    <style>
+        :root {
+            --primary: #ff7043;
+            --secondary: #3c3c3c;
+            --light: #fafafa;
+            --dark: #222;
+            --max-width: 1100px;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: var(--light);
+            color: var(--secondary);
+            line-height: 1.6;
+        }
+
+        header {
+            background: url('https://images.unsplash.com/photo-1560114927-6ae7c0c544f0?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 26px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: var(--max-width);
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: var(--dark);
+            margin-bottom: 40px;
+            font-size: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        @media(min-width: 768px) {
+            .grid-3 { grid-template-columns: repeat(3, 1fr); }
+            .grid-2 { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .testimonial {
+            background: white;
+            padding: 25px;
+            border-left: 5px solid var(--primary);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        form button {
+            width: 100%;
+            padding: 14px;
+            background: var(--primary);
+            border: none;
+            color: white;
+            font-size: 1.1rem;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            background: var(--dark);
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO -->
+    <header>
+        <h1>Pet Shop NYC</h1>
+        <p>Your trusted neighborhood pet shop in the heart of New York City.</p>
+        <a href="#services" class="btn">Explore Services</a>
+    </header>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="grid grid-3">
+            <div class="card">
+                <h3>Pet Grooming</h3>
+                <p>Professional grooming to keep your pet looking and feeling great.</p>
+            </div>
+            <div class="card">
+                <h3>Vet Checkups</h3>
+                <p>Quick, reliable wellness exams with certified professionals.</p>
+            </div>
+            <div class="card">
+                <h3>Pet Daycare</h3>
+                <p>A fun, safe environment for your pets while you're away.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products">
+        <h2>Popular Products</h2>
+        <div class="grid grid-3">
+            <div class="card">
+                <h3>Premium Pet Food</h3>
+                <p>Nutritious, vet-approved food for dogs and cats.</p>
+            </div>
+            <div class="card">
+                <h3>Toys & Accessories</h3>
+                <p>Keep your pets active, entertained, and happy.</p>
+            </div>
+            <div class="card">
+                <h3>Beds & Comfort</h3>
+                <p>Soft, cozy beds for restful nap time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+        <h2>What Our Customers Say</h2>
+
+        <div class="testimonial">
+            <p>"Best groomers in NYC! My dog always comes out looking adorable." — <strong>Amanda R.</strong></p>
+        </div>
+
+        <div class="testimonial">
+            <p>"Great selection of healthy pet food and super friendly staff." — <strong>Jorge M.</strong></p>
+        </div>
+
+        <div class="testimonial">
+            <p>"Love this place! Truly my go-to pet shop in Manhattan." — <strong>Lina T.</strong></p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p style="text-align:center; margin-top:20px;">
+            📍 123 Pet Street, Manhattan, New York, NY  
+            <br>📞 (212) 555-7890  
+            <br>📧 hello@petshopnyc.com
+        </p>
+    </section>
+
+    <footer>
+        © 2025 Pet Shop NYC — All Rights Reserved
+    </footer>
+
+</body>
+</html>
